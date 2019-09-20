@@ -1,0 +1,15 @@
+// 修改 placeholder 颜色
+@mixin placeholder($class, $color) {
+  #{$class}::-webkit-input-placeholder {
+    color: $color;
+  }
+  #{$class}:-moz-placeholder {
+    color: $color;
+  }
+  #{$class}::-moz-placeholder {
+    color: $color;
+  }
+  #{$class}:-ms-input-placeholder {
+    color: $color;
+  }
+}

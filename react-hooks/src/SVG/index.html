@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style type="text/css">
+            .load {
+                width: 80px;
+                height: 80px;
+            }
+            .loading {
+                stroke: rgb(53, 157, 218);
+                stroke-width: 5;
+                fill: none;
+            }
+            @keyframes dash {
+                0% {
+                    stroke-dasharray: 1, 200;
+                    stroke-dashoffset: 0;
+                }
+                50% {
+                    stroke-dasharray: 130, 200;
+                    stroke-dashoffset: -50;
+                }
+                100% {
+                    stroke-dasharray: 130, 200;
+                    stroke-dashoffset: -188;
+                }
+            }
+            .loading {
+                stroke: rgb(53, 157, 218);
+                stroke-width: 5;
+                fill: none;
+                animation: dash 1.5s linear infinite;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            .load {
+                animation: rotate 2s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <svg class="load" viewBox="25 25 50 50">
+            <circle class="loading" cx="50" cy="50" r="20" fill="none" />
+        </svg>
+    </body>
+</html>

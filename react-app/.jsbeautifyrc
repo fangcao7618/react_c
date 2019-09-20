@@ -1,0 +1,27 @@
+{
+  "html": {
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "css": {
+    "indent_char": " ",
+    "indent_size": 2,
+    "newline_between_rules": false,
+    "selector_separator_newline": false
+  },
+  "js": {
+  },
+  "json": {
+    "brace_style": "none",
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "all": {
+    "e4x": true,
+    "brace_style": "none",
+    "end_with_newline": true,
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "end_with_newline": true
+}

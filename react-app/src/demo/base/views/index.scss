@@ -1,0 +1,10 @@
+@import '~styles/base.scss';
+@import '~styles/mixin.scss';
+// 自定义主题
+@import '~project/styles/bootstrap.custom.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+html,
+body {
+  color: green;
+}

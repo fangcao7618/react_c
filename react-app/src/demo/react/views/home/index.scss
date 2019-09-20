@@ -1,0 +1,39 @@
+.main {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.component {
+  padding: 40px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 800px;
+  background-color: #001139;
+  color: #fff;
+}
+
+.text {
+  margin-top: 30px;
+  font-size: 40px;
+  :global {
+    @import '~components/react/text/neon.scss';
+  }
+}
+
+.rewrite {
+  font-size: 40px;
+  :global {
+    // 文字颜色
+    $gr-text-neon-color: #04e1b2;
+    // 普通 shadow
+    $gr-text-neon-border-normal: #227750;
+    // 浅色 shadow
+    $gr-text-neon-border-low: #0aec84;
+    // 深色 shadow
+    $gr-text-neon-border-high: #95d8b9;
+    @import '~components/react/text/neon.scss';
+  }
+}

@@ -1,0 +1,19 @@
+// 文字颜色
+$gr-text-neon-color: #fff6a9 !default;
+// 普通 shadow
+$gr-text-neon-border-normal: #ffa500 !default;
+// 浅色 shadow
+$gr-text-neon-border-low: #ff8d00 !default;
+// 深色 shadow
+$gr-text-neon-border-high: #f00 !default;
+
+.gr-text-neon {
+  color: $gr-text-neon-color;
+  text-shadow: 0 0 5px $gr-text-neon-border-normal,
+    0 0 15px $gr-text-neon-border-normal,
+    0 0 20px $gr-text-neon-border-normal,
+    0 0 40px $gr-text-neon-border-normal,
+    0 0 60px $gr-text-neon-border-high,
+    0 0 10px $gr-text-neon-border-low,
+    0 0 80px $gr-text-neon-border-high;
+}

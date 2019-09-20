@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 为移动设备添加 viewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="https://v3.bootcss.com/apple-touch-icon.png" />
+</head>
+<script src="<%=htmlWebpackPlugin.options.publicPath %>libs/ueditor/ueditor.config.js"></script>
+<% if(process.env.env == "dev") { %>
+<% include ./_inc/ueditor.config.dev.html %>
+<% } %>
+<% if(process.env.env == "stg") { %>
+<% include ./_inc/ueditor.config.stg.html %>
+<% } %>
+<% if(process.env.env == "prd") { %>
+<% include ./_inc/ueditor.config.prd.html %>
+<% } %>
+<script src="<%=htmlWebpackPlugin.options.publicPath %>libs/ueditor/ueditor.all.js"></script>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
